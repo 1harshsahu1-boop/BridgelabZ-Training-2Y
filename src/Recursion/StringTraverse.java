@@ -8,9 +8,8 @@ public class StringTraverse {
         System.out.print(str.charAt(0)+" ");
         traverse(str.substring(1));
     }
-
     public static void main(String[] args) {
-        String text = "Recursion";4
+        String text = "Recursion";
         traverse(text);
     }
 }
