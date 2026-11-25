@@ -8,10 +8,8 @@ public class stackcode {
     public stackcode(int size) {
         stack = new int[size];
         capacity = size;
-        top = -1; // Indicates an empty stack
+        top = -1;
     }
-
-    // Add an element to the top
     public void push(int item) {
         if (top == capacity - 1) {
             System.out.println("Stack Overflow");
@@ -19,8 +17,6 @@ public class stackcode {
         }
         stack[++top] = item;
     }
-
-    // Remove and return the top element
     public int pop() {
         if (top == -1) {
             System.out.println("Stack Underflow");
@@ -28,8 +24,6 @@ public class stackcode {
         }
         return stack[top--];
     }
-
-    // View the top element
     public int peek() {
         if (top == -1) {
             System.out.println("Stack is empty");
@@ -43,9 +37,9 @@ public class stackcode {
         myStack.push(10);
         myStack.push(20);
 
-        System.out.println("Top: " + myStack.peek());    // Output: 20
-        System.out.println("Popped: " + myStack.pop());  // Output: 20
-        System.out.println("New Top: " + myStack.peek());// Output: 10
+        System.out.println("Top: " + myStack.peek());
+        System.out.println("Popped: " + myStack.pop());
+        System.out.println("New Top: " + myStack.peek());
     }
 }
 
